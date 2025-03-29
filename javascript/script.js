@@ -8,3 +8,11 @@
  * For esbuild documentation, please see:
  * https://esbuild.github.io/
  */
+
+const navMenu = document.getElementByClass("menu-header-munu-container");
+//const navLink = document.querySelectorAll(".menu-item");
+const hambergerMenu = document.getElementById("hamberger");
+
+hambergerMenu.addEventListener("click", () => {
+    navMenu.classList.toggle("left-[0]");
+})
