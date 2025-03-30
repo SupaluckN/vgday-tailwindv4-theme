@@ -9,7 +9,9 @@
  * https://esbuild.github.io/
  */
 
-const navMenu = document.getElementByClass("menu-header-munu-container");
+
+/*~~~~~~~~~~~~~~~ TOGGLE BUTTON ~~~~~~~~~~~~~~~*/
+const navMenu = document.getElementById("nav-menu");
 //const navLink = document.querySelectorAll(".menu-item");
 const hambergerMenu = document.getElementById("hamberger");
 

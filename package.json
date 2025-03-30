@@ -2,6 +2,7 @@
 	"private": true,
 	"devDependencies": {
 		"@_tw/typography": "^0.5.17",
+		"@fortawesome/fontawesome-free": "^6.7.2",
 		"@tailwindcss/postcss": "^4.0.14",
 		"@wordpress/prettier-config": "^4.20.0",
 		"adm-zip": "^0.5.16",
