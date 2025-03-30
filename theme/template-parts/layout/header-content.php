@@ -11,9 +11,10 @@
 
 <header id="masthead" class="bg-slate-50 fixed w-full top-0 left-0">
 
+<i class="ri-arrow-left-up-line"></i>
+
 	<div class="flex items-center justify-between h-16 sm:h-20">
 
-	<i class="fa-solid fa-x"></i>
 			
 		<div>
 			<?php
@@ -47,9 +48,7 @@
 					
 					<scan class="sr-only"><?php esc_html_e( 'Primary Menu', 'vgday-tailwindv4' ); ?></scan>
 
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-					</svg>
+					<i class="ri-arrow-left-up-line"></i>
 			</button>
 
 			<div id="nav-menu" class="absolute top-0 left-0 min-h-[80vh] left-[-100%] w-full bg-zinc-50/60 backdrop-blur-sm

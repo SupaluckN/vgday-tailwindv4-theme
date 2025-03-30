@@ -145,7 +145,7 @@ add_action( 'widgets_init', 'vgday_tailwindv4_widgets_init' );
  * Enqueue scripts and styles.
  */
 function vgday_tailwindv4_scripts() {
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/node_modules/@fortawesome/fontawesome-free/css/all.min.css', array(), VGDAY_TAILWINDV4_VERSION );
+	wp_enqueue_style( 'remixiconok', get_template_directory_uri() . '/assets/Remixicon/fonts/remixicon.css', array(), VGDAY_TAILWINDV4_VERSION );
 	wp_enqueue_style( 'vgday-tailwindv4-style', get_stylesheet_uri(), array(), VGDAY_TAILWINDV4_VERSION );
 	wp_enqueue_script( 'vgday-tailwindv4-script', get_template_directory_uri() . '/js/script.min.js', array(), VGDAY_TAILWINDV4_VERSION, true );
 

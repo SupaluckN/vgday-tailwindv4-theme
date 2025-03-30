@@ -20,8 +20,10 @@ const hambergerMenu = document.getElementById("hamberger");
 
 hambergerMenu.addEventListener("click", () => {
     navMenu.classList.toggle("left-[0]");
-    
+    //hambergerMenu.classList.toggle("fa-solid fa-xmark");
 })
+
+
 
 
 
