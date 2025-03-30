@@ -12,6 +12,8 @@
 <header id="masthead" class="bg-slate-50 fixed w-full top-0 left-0">
 
 	<div class="flex items-center justify-between h-16 sm:h-20">
+
+	<i class="fa-solid fa-x"></i>
 			
 		<div>
 			<?php

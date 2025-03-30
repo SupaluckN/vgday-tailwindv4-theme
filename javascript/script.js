@@ -10,11 +10,20 @@
  */
 
 
+import '@fortawesome/fontawesome-free/js/all'
 /*~~~~~~~~~~~~~~~ TOGGLE BUTTON ~~~~~~~~~~~~~~~*/
 const navMenu = document.getElementById("nav-menu");
 //const navLink = document.querySelectorAll(".menu-item");
 const hambergerMenu = document.getElementById("hamberger");
 
+
+
 hambergerMenu.addEventListener("click", () => {
     navMenu.classList.toggle("left-[0]");
+    
 })
+
+
+
+
+
