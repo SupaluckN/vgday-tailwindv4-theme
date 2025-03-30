@@ -9,19 +9,15 @@
  * https://esbuild.github.io/
  */
 
-
-import '@fortawesome/fontawesome-free/js/all'
-/*~~~~~~~~~~~~~~~ TOGGLE BUTTON ~~~~~~~~~~~~~~~*/
-const navMenu = document.getElementById("nav-menu");
-//const navLink = document.querySelectorAll(".menu-item");
-const hambergerMenu = document.getElementById("hamberger");
+const hamburgerMenu = document.querySelector('#hamburger');
+const mobileMenu = document.querySelector('#nav-menu');
 
 
+hamburgerMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
 
-hambergerMenu.addEventListener("click", () => {
-    navMenu.classList.toggle("left-[0]");
-    //hambergerMenu.classList.toggle("fa-solid fa-xmark");
-})
+
 
 
 

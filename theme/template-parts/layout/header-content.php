@@ -9,14 +9,17 @@
 
 ?>
 
-<header id="masthead" class="bg-slate-50 fixed w-full top-0 left-0">
+<header id="masthead" class="">
+	
+		
+		
 
-<i class="ri-arrow-left-up-line"></i>
+		<nav 
+			class="flex flex-wrap items-center justify-between 
+	w-full py-4 md:py-0 px-4 bg-slate-50 text-lg text-gray-700
+			aria-label="<?php esc_attr_e( 'Main Navigation', 'vgday-tailwindv4' ); ?>">
 
-	<div class="flex items-center justify-between h-16 sm:h-20">
-
-			
-		<div>
+			<div>
 			<?php
 			if ( is_front_page() ) :
 				?>
@@ -34,44 +37,36 @@
 				<p><?php echo $vgday_tailwindv4_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
 			<?php endif; ?>
 		</div>
-		
-
-		<nav 
-			class="" 
-			aria-label="<?php esc_attr_e( 'Main Navigation', 'vgday-tailwindv4' ); ?>">
 			
 			<button 
 				aria-controls="primary-menu" 
 				aria-expanded="false"
-				id="hamberger" class="cursor-pointer z-50"
+				id="hamburger" class="h-6 w-6 cursor-pointer md:hidden block"
 				>
 					
 					<scan class="sr-only"><?php esc_html_e( 'Primary Menu', 'vgday-tailwindv4' ); ?></scan>
 
-					<i class="ri-arrow-left-up-line"></i>
+					<i class="ri-menu-line"></i>
 			</button>
 
-			<div id="nav-menu" class="absolute top-0 left-0 min-h-[80vh] left-[-100%] w-full bg-zinc-50/60 backdrop-blur-sm
-    flex items-center justify-center duration-300 overflow-hidden">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-					'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
-				)
-			);
-			?>
+			<div id="nav-menu" class="hidden w-full md:flex md:items-center md:w-auto">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'items_wrap'     => '<ul id="%1$s" class="%2$s" aria-label="submenu">%3$s</ul>',
+					)
+				);
+				?>
 			</div>
-			
-
 			
 			
 		</nav><!-- #site-navigation -->
 
 	
 
-	</div>
+	
 
 	
 

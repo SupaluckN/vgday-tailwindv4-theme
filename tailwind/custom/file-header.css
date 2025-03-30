@@ -24,17 +24,16 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
 
 
 /* .menu-header-munu-container {
-    @apply absolute top-0 left-0 min-h-[80vh] left-[-100%] w-full bg-zinc-50/60 backdrop-blur-sm
-    flex items-center justify-center duration-300 overflow-hidden;
-} */
+    @apply w-full md:flex md:items-center md:w-auto;
+}  */
 
 
 ul.menu {
-    @apply flex flex-col items-center gap-8;
+    @apply pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0;
 }
 
 li.menu-item a {
-    @apply text-lg font-bold duration-300;
+    @apply md:p-4 py-2 block duration-300;
 }
 
 li.menu-item a:hover {
