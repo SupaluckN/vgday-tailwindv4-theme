@@ -9,14 +9,11 @@
 
 ?>
 
-<header id="masthead" class="">
-	
-		
-		
+<header id="masthead" class="fixed w-full md:h-16 py-2 md:py-2 px-4 bg-indigo-50/80 backdrop-blur text-lg text-gray-800 drop-shadow-md z-100">
 
 		<nav 
-			class="flex flex-wrap items-center justify-between 
-	w-full py-4 md:py-0 px-4 bg-slate-50 text-lg text-gray-700
+			class="relative flex flex-wrap items-center justify-between mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
+
 			aria-label="<?php esc_attr_e( 'Main Navigation', 'vgday-tailwindv4' ); ?>">
 
 			<div>
